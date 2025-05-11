@@ -1,0 +1,100 @@
+/* _primitives.scss */
+
+/* Font */
+// $primaryFont: 
+// $secondaryFont:
+// $teriaryFont:
+
+/* Colours */
+  /* Theme colors */
+  $primary: #0157AE; 
+  $primaryBG: #E6F2FF;
+  $primaryDark: #1565C0;
+  /* Attention */
+  $secondary: #20C997;
+  $secondaryBG: #D9F7EE;
+  $secondaryDark: #137A6D;
+  /* highlighting */
+  $teriary: #FFF59D;
+  $tertiaryBG: #FFFDE7;
+  $tertiaryDark: #F9C846;
+
+  /* Functional Colors */
+  /* Black, softWhite and White */
+  $black: #000;
+  $softWhite: hsl(0, 0%, 95%);
+  $white:#fff;
+
+  /* alert */
+  $alert: #DC3545;
+  $alertBG: #F8D7DA;
+  $alertDark: #B71C1C;
+  /* warning */
+  $warning: #FFC107;
+  $warningBG: #FFF8E1;
+  $warningDark: #FF8F00;
+  /* success */
+  $success: #28A745;
+  $successBG: #D4EDDA;
+  $successDark: #155724;
+  /* information */
+  $info: #17A2B8;
+  $infoBG: #D1ECF1;
+  $infoDark: #0C5460;
+  /* Disabled */
+  $disable: #646363;
+  $disableBG: #e2e2e2;
+  $disableDark: #5a5a5a;
+
+  /* Decorative Colors */
+  $shadowBase: rgba(0, 0, 0, 0.5);
+  $shadowHigh: rgba(0, 0, 0, 0.25);
+  $shadowLow: rgba(0, 0, 0, 0.125);
+
+  /* Scale */
+ $scale1: 3.815rem;  
+ $scale2: 3.052rem;
+ $scale3: 2.441rem;
+ $scale4: 1.953rem;
+ $scale5: 1.563rem;
+ $scale6: 1.25rem;
+ $scaleBase: 1rem;
+ $scaleSub: 0.75rem;
+ $scaleMini: 0.5rem;
+
+
+  /* Sizes */
+  $p1: 0.0625rem;
+  $p2: 0.125rem;
+  $p4: 0.25rem;
+  $p8: 0.5rem;
+  $p12: 0.75rem;
+  $p16: 1rem;
+  $p20: 1.25rem;
+  $p24: 1.5rem;
+  $p28: 1.75rem;
+  $p32: 2rem;
+  $p48: 3rem;
+  $p64: 4rem;
+  $p80: 5rem;
+
+  /* Z-index */
+  $sub4: 100;
+  $sub4O: 150;
+  $sub3: 200;
+  $sub3O: 250;
+  $sub2: 300;
+  $sub2O: 350;
+  $sub1: 400;
+  $sub1O: 450;
+  $gnd: 500;
+  $gndO: 550;
+  $flr1: 600;
+  $flr1O: 650;
+  $flr2: 700;
+  $flr2O: 750;
+  $flr3: 800;
+  $flr3O: 850;
+  $flr4: 900;
+  $flr4O: 950;
+

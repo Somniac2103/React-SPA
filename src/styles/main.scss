@@ -1,0 +1,18 @@
+@use 'design_system/designsystem' as *;
+
+#heroImg{
+  width: 300px;
+  height: 300px;
+  border: $borderPrimaryBase;
+  border-radius: $borRadBase;
+  margin: $spBase;
+}
+
+.logoStack{
+  display: flex;
+  margin: $spBase;
+}
+
+p{
+  margin: $spMin;
+}

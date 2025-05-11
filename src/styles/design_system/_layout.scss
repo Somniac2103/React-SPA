@@ -1,0 +1,34 @@
+@use 'primitives' as *;
+@use 'semantics' as *;
+@use 'base' as *;
+
+main{
+    background-color: $softWhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 75vh;
+}
+
+header{
+    background-color: $primaryBG;
+    border-bottom: $borderPrimaryBase;
+    height: 10vh;
+    padding: 0 $spMax;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    
+}
+
+footer{
+    width: 100%;
+    background-color: $primaryBG;
+    border-top: $borderPrimaryBase;
+    min-height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
