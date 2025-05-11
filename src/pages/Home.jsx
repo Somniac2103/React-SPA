@@ -10,7 +10,7 @@ const Home = () => {
       <Swiper loop aria-roledescription="carousel">
         <SwiperSlide>
           <div className="min-h-[60vh] sm:min-h-[75vh] flex flex-col items-center justify-center bg-blue-100 text-center px-4">
-            <h1 className="text-2xl sm:text-4xl font-bold text-gray-900 mb-2">Github Actions working..</h1>
+            <h1 className="text-2xl sm:text-4xl font-bold text-gray-900 mb-2">Github Actions working. TEST 3</h1>
             <p className="text-base sm:text-lg text-gray-800 max-w-lg">
               We deliver quality and value through innovation and experience.
             </p>
