@@ -1,0 +1,59 @@
+@use './design_system/designsystem' as *;
+
+.home {
+    .swiper{
+        width: 70vw;
+        min-height: 80vh;
+    }
+    .slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: $spMedium;
+        background-color: $primaryBG;
+        border-radius: 1rem;
+        box-shadow: $shadowBase;
+        border: $borderPrimaryBase; 
+        min-height: 70vh;   
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        padding-left: 1rem;
+        list-style: disc;
+    }
+
+    li {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.swiper-button-prev,
+    .swiper-button-next {
+        color: $primary;
+        padding: 8px;
+        width: 4rem;
+        height: 4rem;
+
+        &::after {
+            font-size: 1rem;
+        }
+
+        &:hover {
+            color: $secondary;
+        }
+    }
+
+.swiper-pagination-bullet {
+    background: #ccc;
+    opacity: 1;
+    }
+
+.swiper-pagination-bullet-active {
+    background: #007bff;
+    }
+

@@ -1,0 +1,45 @@
+@use 'generators' as *;
+@use 'primitives' as *;
+
+.metabox{
+    position: fixed;
+    bottom: 5rem;
+    left: -450px + 30px;
+    width: 450px;
+    border: $borderPrimaryBase;
+    border-radius: $borRadBase;
+    padding: $spHuge;
+    background-color: $primaryBG;
+    z-index: 900;
+    transition: left 0.5s ease-in-out;
+
+    &:hover{
+        left: 0rem;        
+    }
+}
+
+.metabox-label {
+    position: absolute;
+    top: 2.5rem;
+    right: 0;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg); 
+    font-size: $scaleBase;
+    font-family: $font-heading;
+    color: $primary;
+    letter-spacing: 0.1em;
+}
+
+.metabox-info-icon{
+    position: absolute;
+    top: 0.5rem;
+    right: 0;
+    font-size: 1.5rem;
+    color: $primary;
+}
+
+.metabox-content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}

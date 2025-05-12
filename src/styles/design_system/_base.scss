@@ -1,7 +1,7 @@
 /* _base.scss */
 @use 'sass:color';
+@use 'generators' as *;
 @use 'primitives' as *;
-@use 'semantics' as *;
 
 a {
     color: $primary;
@@ -20,20 +20,20 @@ a {
   
   button,
   .button {
-    margin: $spMin auto;
-    padding: $spLess $spBase;
+    margin: $spTiny auto;
+    padding: $spSmall $spMedium;
     border-radius: $borRadBase;
     border: $borderPrimaryBase;
     background-color: $primaryBG;
     color: $primary;
-    box-shadow: $p4 $p4 $p4 $shadowBase;
+    box-shadow: p(4) p(4) p(4) $shadowBase;
     transition: transform 0.25s;
     font-size: $scale6;
   
     &:hover {
       transform: scale(1.05, 1.15);
       border: $borderSecondaryBase;
-      box-shadow: $p4 $p4 $p12 $shadowHigh;
+      box-shadow: p(4) p(4) p(12) $shadowHigh;
       background-color: $secondaryBG;
       color: $secondary;
       cursor: pointer;
@@ -43,15 +43,15 @@ a {
     &:active {
       transform: scale(1, 1);
       border: $borderTertiaryBase;
-      box-shadow: $p4 $p4 $p4 $shadowLow;
+      box-shadow: p(4) p(4) p(4) $shadowLow;
       background-color: $tertiaryBG;
       color: $teriary;
       cursor: pointer;
     }
   
     &:disabled {
-      margin: $spLess auto;
-      padding: $spLess;
+      margin: $spSmall auto;
+      padding: $spSmall;
       border-radius: $borRadBase;
       border: $borderDisableBase;
       background-color: $disableBG;
@@ -130,18 +130,18 @@ a {
   
   hr {
     width: 75%;
-    margin: $spMore 0;
+    margin: $spLarge 0;
   }
   
   img {
     height: 50px;
     width: auto;
-    margin: $p4;
+    margin: p(4);
   }
   
   li {
     list-style-type: none;
-    padding: $spLess;
+    padding: $spSmall;
   }
   
   p {
@@ -154,14 +154,26 @@ a {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: $spBase 0;
+    margin: $spMedium 0;
   }
   
   svg {
-    width: $p48;
-    height: $p48;
+    width: p(48);
+    height: p(48);
   }
   
   ul {
-    gap: $spBase;
+    gap: $spMedium;
+  }
+
+  .react-router-link-component{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .react-router-list-component{
+    padding: $spSmall;
   }

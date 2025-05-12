@@ -1,5 +1,5 @@
+@use 'generators' as *;
 @use 'primitives' as *;
-@use 'semantics' as *;
 @use 'base' as *;
 
 main{
@@ -15,18 +15,28 @@ header{
     background-color: $primaryBG;
     border-bottom: $borderPrimaryBase;
     height: 10vh;
-    padding: 0 $spMax;
+    padding: 0  $spHuge;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 
-    
+    .header-logo-section {
+        display: flex;
+        align-items: center;
+            img{
+            border: $borderPrimaryBase;
+            border-radius: 50%;  
+            height:p(75);      
+        }        
+    }    
 }
 
 footer{
     width: 100%;
     background-color: $primaryBG;
     border-top: $borderPrimaryBase;
+    padding: $spHuge;
     min-height: 15vh;
     display: flex;
     justify-content: center;
