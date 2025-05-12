@@ -1,0 +1,25 @@
+  /* Sizes */
+
+$px2rem: ();
+
+@for $i from 1 through 100 {
+  $rem-value: ($i / 16) * 1rem;
+  $px2rem: map-merge($px2rem, (#{$i}: $rem-value)) !global;
+}
+
+@function p($key) {
+  @return map-get($px2rem, $key);
+}
+
+  /* Z-index */
+$zdex: ();
+
+@for $i from 1 through 9 {
+  $z-value: $i * 100;
+  $zdex: map-merge($zdex, (#{$i}: $z-value)) !global;
+}
+
+@function z($key) {
+  @return map-get($zdex, $key);
+}
+

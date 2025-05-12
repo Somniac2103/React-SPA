@@ -1,11 +1,11 @@
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Header from './Header';
+import Footer from './Footer';
 
 const MainLayout = ({ children }) => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div>
       <Header />
-      <main className="flex-grow container mx-auto px-4 py-6">
+      <main>
         {children}
       </main>
       <Footer />

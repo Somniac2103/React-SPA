@@ -1,9 +1,21 @@
 /* _primitives.scss */
+@use 'generators' as *;
 
 /* Font */
-// $primaryFont: 
-// $secondaryFont:
-// $teriaryFont:
+$primaryFont: 'Georgia';
+$secondaryFont: 'Roboto';
+$teriaryFont: 'Montserrat';
+
+$font-body: $secondaryFont, sans-serif;
+$font-heading: $primaryFont, serif;
+
+body {
+  font-family: $font-body;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-heading;
+}
 
 /* Colours */
   /* Theme colors */
@@ -61,40 +73,21 @@
  $scaleBase: 1rem;
  $scaleSub: 0.75rem;
  $scaleMini: 0.5rem;
+ 
+ /* Margin, Padding & Gap */
+ $spTiny: 0.25rem;
+ $spSmall: 0.5rem;
+ $spMedium: 1rem;
+ $spLarge: 1.5rem;
+ $spHuge: 2rem;
 
+ /* borders */
+ $borRadMin: 0.5rem;
+ $borRadBase: 1rem;
+ $borRadMax: 2rem;
 
-  /* Sizes */
-  $p1: 0.0625rem;
-  $p2: 0.125rem;
-  $p4: 0.25rem;
-  $p8: 0.5rem;
-  $p12: 0.75rem;
-  $p16: 1rem;
-  $p20: 1.25rem;
-  $p24: 1.5rem;
-  $p28: 1.75rem;
-  $p32: 2rem;
-  $p48: 3rem;
-  $p64: 4rem;
-  $p80: 5rem;
-
-  /* Z-index */
-  $sub4: 100;
-  $sub4O: 150;
-  $sub3: 200;
-  $sub3O: 250;
-  $sub2: 300;
-  $sub2O: 350;
-  $sub1: 400;
-  $sub1O: 450;
-  $gnd: 500;
-  $gndO: 550;
-  $flr1: 600;
-  $flr1O: 650;
-  $flr2: 700;
-  $flr2O: 750;
-  $flr3: 800;
-  $flr3O: 850;
-  $flr4: 900;
-  $flr4O: 950;
+ $borderPrimaryBase: 2px solid $primary;
+ $borderSecondaryBase: 2px solid $secondary;
+ $borderTertiaryBase: 2px solid $teriary;
+ $borderDisableBase: 2px solid $disable;
 

@@ -5,38 +5,38 @@ import { FiMenu, FiX } from 'react-icons/fi';
 import logo from "../assets/img/Portfolio_logo.webp";
 
 
-const menuItems = [
-  { name: 'Home', to: '/' },
-  { name: 'About', to: '/about' },
-  { name: 'Services', to: '/services' },
-  { name: 'Contact', to: '/contact' },
-];
+// const menuItems = [
+//   { name: 'Home', to: '/' },
+//   { name: 'About', to: '/about' },
+//   { name: 'Services', to: '/services' },
+//   { name: 'Contact', to: '/contact' },
+// ];
 
 export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  // const [menuOpen, setMenuOpen] = useState(false);
 
-  const toggleMenu = () => setMenuOpen(!menuOpen);
-  const closeMenu = () => setMenuOpen(false);
+  // const toggleMenu = () => setMenuOpen(!menuOpen);
+  // const closeMenu = () => setMenuOpen(false);
 
   return (
     <header>
-      <div id='header-Logo'>
-        <Link to="/" aria-label="Home">
+      <div>
+        <Link to="/" aria-label="Home" className='header-logo-section'>
           <img src={logo} alt="Site logo" />
-          <span>Homepage</span>
+          <h1>BK Salmon - Portfolio</h1>
         </Link>
       </div>
 
-      <div id='header-nav'>
+      {/* <div className='header-nav'>
         <nav className="header-nav-desktop" aria-label="Main navigation">
           {menuItems.map((item) => (
-            <Link key={item.to} to={item.to}>
+            <Link className='react-router-list-component' key={item.to} to={item.to}>
               {item.name}
             </Link>
           ))}
-        </nav>
+        </nav> 
 
-        <button
+         <button
           onClick={toggleMenu}
           aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'}
           aria-expanded={menuOpen}
@@ -60,7 +60,7 @@ export default function Header() {
             {item.name}
           </Link>
         ))}
-      </nav>
+      </nav> */}
     </header>
   );
 }

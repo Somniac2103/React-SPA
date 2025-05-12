@@ -1,4 +1,5 @@
 import MainLayout from '../layouts/MainLayout';
+import PageMetaBox from '../components/PageMetaBox';
 import GoBackButton from '../components/GoBackButton';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules'
@@ -10,10 +11,27 @@ import 'swiper/css/autoplay';
 import 'swiper/css/effect-fade';
 
 const Home = () => {
+  let $pageMetaData = {
+    design : 'Proprietary',
+    designsystem : 'Proprietary',
+    style : 'SASS using partials',
+    frontend : 'React',
+    backend : 'React Router (SPA)',
+    database : 'Coming Soon!',
+    webServer : 'Nginx Reverse Proxy',
+    system : 'Linux Ubuntu',
+    infrastructure : '3rd Party VPS',
+    cdci : 'GitHub Actions, Docker',
+    optimisations : 'Partial SEO & Accessbility',
+    gitrepo : "https://github.com/Somniac2103/React-SPA",
+    gitname : "React SPA"
+  }
   return (
     <MainLayout>
+      <PageMetaBox metadata={$pageMetaData}/>
       <section className="home" aria-label="Hero slideshow" >
       <Swiper
+          className='swiper'
           aria-roledescription="carousel"
           aria-label="Lastest updates, Currently working on and future plans"
           role="region"
@@ -23,7 +41,7 @@ const Home = () => {
           pagination={{ clickable: true }}
 
           autoplay={{ 
-            delay: 1000, 
+            delay: 3000, 
             disableOnInteraction: false, 
             pauseOnMouseEnter: true, 
           }}
@@ -42,51 +60,50 @@ const Home = () => {
             1024: { slidesPerView: 1 }
           }}
       >
-        <SwiperSlide role="group" aria-label="Slide 1 of 3">
-          <div className="slide">
-            <h2>What is New on the Website:</h2>
+        <SwiperSlide className="slide"role="group" aria-label="Slide 1 of 3">
+          <div >
+            <h2>What Is New On The Website:</h2>
             <ul>
-              <li>Linux Server Configured and Hardened</li>
-              <li>Docker Compose serving images</li>
-              <li>GitHub Actions implemented to built and push images to Docker hub</li>
-              <li>Git version control implemented with pull request protection</li>
-              <li>Reverse Proxy Nginx Configured and firewall implemented</li>
-              <li>React Homepage created with React Router</li>
-              <li>SASS design system implemented</li>
+              <li>Linux Server Configured And Hardened</li>
+              <li>Docker Compose Serving App Images</li>
+              <li>GitHub Actions Implemented To Built And Push App Images To Docker Hub</li>
+              <li>Git Version Control Implemented With Pull Request Protection</li>
+              <li>Reverse Proxy Nginx Configured And Firewall Implemented</li>
+              <li>React Homepage Created with React Router</li>
+              <li>SASS Design System Implemented</li>
             </ul>
           </div>
         </SwiperSlide>
-        <SwiperSlide role="group" aria-label="Slide 2 of 3">
-          <div className="slide">
-            <p>Coming this week:</p>
+        <SwiperSlide className="slide" role="group" aria-label="Slide 2 of 3">
+          <div>
+            <h2>Coming Up This Week:</h2>
             <ul>
-              <li>Jenkins configuration with Github hook</li>
-              <li>PostgreSql Database establish for datadriven website</li>
-              <li>About page to be created</li>
+              <li>Jenkins Configuration With Github Hook</li>
+              <li>PostgreSql Database Establish For Datadriven Website</li>
+              <li>About Page To Be Created</li>
             </ul>
           </div>
         </SwiperSlide>
-        <SwiperSlide role="group" aria-label="Slide 3 of 3">
-          <div className="slide">
-            <h2>Roadmap</h2>
+        <SwiperSlide className="slide" role="group" aria-label="Slide 3 of 3">
+          <div>
+            <h2>Roadmap For The Future</h2>
             <ul>
-              <li>JavaScript, Python and PHP webs servers</li>
-              <li>JavaScript, Python and PHP API servers</li>
-              <li>JavaScript website</li>
-              <li>Python website</li>
-              <li>PHP Classbase MVC website</li>
-              <li>Bootstrap/TailwindCSS website</li>
-              <li>WordPress website with custom theme and plugins</li>
-              <li>MySql and MongoDB databases implementation</li>
-              <li>Ansible, Terrafrom and Kubernetes</li>
-              <li>Azure implementation for scaling</li>
-              <li>Exciting time!!</li>
+              <li>JavaScript, Python and PHP Web App Servers</li>
+              <li>JavaScript, Python and PHP API Servers</li>
+              <li>JavaScript and Python Websites</li>
+              <li>PHP Website Using Class Base MVC</li>
+              <li>Bootstrap/TailwindCSS Website</li>
+              <li>WordPress Website With Custom Theme And Plugins</li>
+              <li>MySql And MongoDB Databases Implementation</li>
+              <li>Ansible, Terrafrom And Kubernetes</li>
+              <li>Azure Implementation</li>
+              <li>Exciting Time!!</li>
             </ul>
           </div>
         </SwiperSlide>
       </Swiper>
     </section>
-      <GoBackButton/> 
+      {/* <GoBackButton/>  */}
     </MainLayout>
   );
 };
