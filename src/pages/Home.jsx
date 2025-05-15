@@ -10,19 +10,24 @@ import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import 'swiper/css/effect-fade';
 
-const Home = () => {
+const Home = () => { 
   let $pageMetaData = {
-    design : 'Proprietary',
-    designsystem : 'Proprietary',
-    style : 'SASS using partials',
+    design : 'Proprietary Design',
+    designsystem : 'Proprietary System',
+    style : 'Partial SASS System',
     frontend : 'React',
     backend : 'React Router (SPA)',
-    database : 'Coming Soon!',
-    webServer : 'Nginx Reverse Proxy',
-    system : 'Linux Ubuntu',
+    dbDev : 'Coming Soon!',
+    test : 'Coming Soon!',
+    system : 'Linux Ubuntu Distro',
+    network: 'Nginx Reverse Proxy',
+    dbOps: 'Coming Soon!',
     infrastructure : '3rd Party VPS',
     cdci : 'GitHub Actions, Docker',
-    optimisations : 'Partial SEO & Accessbility',
+    optAccess: "Partial",
+    optSEO: "Partial",
+    optPerforamance: "Partial",
+    optRespond: "Partial",
     gitrepo : "https://github.com/Somniac2103/React-SPA",
     gitname : "React SPA"
   }
