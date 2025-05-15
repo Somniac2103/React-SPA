@@ -1,7 +1,8 @@
 @use './design_system/designsystem' as *;
 
 .home {
-    .swiper{
+    .hero-section{
+        .swiper{
         width: 70vw;
         min-height: 80vh;
     }
@@ -56,4 +57,6 @@
 .swiper-pagination-bullet-active {
     background: #007bff;
     }
+}
+    
 

@@ -23,7 +23,7 @@ export default function Header() {
       <div>
         <Link to="/" aria-label="Home" className='header-logo-section'>
           <img src={logo} alt="Site logo" />
-          <h1>BK Salmon - Portfolio</h1>
+          <h1>BK Salmon</h1>
         </Link>
       </div>
 
