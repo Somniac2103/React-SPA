@@ -43,3 +43,8 @@ jobs:
         run: |
           docker push somniac2103/react-homepage:latest
           docker push somniac2103/react-homepage:${{ steps.vars.outputs.sha_short }}
+
+      - name: Notify Jenkins to deploy
+        run: |
+          curl -X POST "http://${{ secrets.JENKINS_HOST }}:${{ secrets.JENKINS_TOKEN }}@${{ secrets.JENKINS_USER }}/job/Pull-and-Deploy-Pro-Website/build?token=${{ secrets.JENKINS_TOKEN_NAME}}"
+
