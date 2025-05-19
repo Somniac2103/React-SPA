@@ -1,6 +1,7 @@
 @use './design_system/designsystem' as *;
 
 .home {
+    width: 750px;
     .hero-section{
         .swiper{
         width: 70vw;
@@ -31,9 +32,8 @@
     li {
         margin-bottom: 0.5rem;
     }
-}
 
-.swiper-button-prev,
+    .swiper-button-prev,
     .swiper-button-next {
         color: $primary;
         padding: 8px;
@@ -49,14 +49,63 @@
         }
     }
 
-.swiper-pagination-bullet {
-    background: #ccc;
-    opacity: 1;
+    .swiper-pagination-bullet {
+        background: #ccc;
+        opacity: 1;
+        }
+
+    .swiper-pagination-bullet-active {
+        background: $primaryDark;
+        }
     }
 
-.swiper-pagination-bullet-active {
-    background: #007bff;
+    .about-section{
+
+        .introduction{
+            .profilepic{
+            height: 150px;
+            width: auto;
+            border: $borderPrimaryBase;
+            border-radius: $borRadBase;
+            float: left;
+            margin: $spMedium;
+        }
+
+        p{
+            margin: $spMedium;
+        }
+
+        .socialstack{
+            display: flex;
+        }
+
+        }  
+        
+        .work-section{
+            .work-section-terms{
+                .work-section-terms{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+
+                    .work-section-part{
+                        width: 300px;
+            }
+        }
+
+            }
+        }
+
+        
+
+            
+
+        .contactMe-section{
+
+        }
+
     }
+
+
 }
     
 

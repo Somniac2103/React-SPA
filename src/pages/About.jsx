@@ -1,7 +1,6 @@
-//External Libraries
-import SEO from '../layouts/SEO';
 
 // Components
+import SEO from '../layouts/SEO';
 import MainLayout from '../layouts/MainLayout';
 import PageMetaBox from '../components/PageMetaBox';
 import GoBackButton from '../components/GoBackButton';

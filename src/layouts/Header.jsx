@@ -21,7 +21,8 @@ export default function Header({ preloadAssets = [] }) {
   return (
     <>
     <Helmet>
-      {preloadAssets.map((href, index) => (
+      {preloadAssets && 
+      preloadAssets.map((href, index) => (
         <link
           key={index}
           rel="preload"
