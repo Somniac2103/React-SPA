@@ -1,8 +1,10 @@
+// Components
 import MainLayout from '../layouts/MainLayout';
 import PageMetaBox from '../components/PageMetaBox';
-import GoBackButton from '../components/GoBackButton';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules'
+
+//CSS
 import '../styles/home.scss'
 import 'swiper/css';
 import 'swiper/css/navigation'

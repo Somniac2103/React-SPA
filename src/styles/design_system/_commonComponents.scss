@@ -53,3 +53,50 @@
         padding: 0.125rem;
     }   
 }
+
+.icon{
+    font-size: 4.5rem;
+}
+
+.externalLinkIconCard{
+    display: flex;
+    flex-direction: column;
+    margin: $spSmall;
+    align-items: center;
+    padding: $spMedium;
+
+    .cv-stack & , .contactMe-section &{
+    flex-direction: row;
+    img{
+        margin-right: 0.250rem;
+    }
+  }
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+        transition: transform 0.2s ease;
+        }
+
+    &:focus,
+    &:hover {
+        border: $borderPrimaryBase;
+        border-radius: $borRadBase;
+        
+    }
+
+    
+
+    img {
+        height: 50px;
+        width: 50px;
+    }
+   
+
+    span {
+        text-align: center;
+    }
+
+    
+}
+

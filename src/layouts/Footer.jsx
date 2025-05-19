@@ -10,6 +10,9 @@ export default function Footer() {
           <Link to="/" aria-label="Home">
             <p>Home</p>
           </Link>
+          <Link to="/about" aria-label="About">
+            <p>About</p>
+          </Link>
         </nav>
         <p>&copy; {year} YourCompany. All rights reserved.</p>
       </div>

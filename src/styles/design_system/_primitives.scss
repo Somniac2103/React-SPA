@@ -86,8 +86,8 @@ h1, h2, h3, h4, h5, h6 {
  $borRadBase: 1rem;
  $borRadMax: 2rem;
 
- $borderPrimaryBase: 2px solid $primary;
- $borderSecondaryBase: 2px solid $secondary;
- $borderTertiaryBase: 2px solid $teriary;
- $borderDisableBase: 2px solid $disable;
+ $borderPrimaryBase: 0.125rem solid $primary;
+ $borderSecondaryBase: 0.125rem solid $secondary;
+ $borderTertiaryBase: 0.125rem solid $teriary;
+ $borderDisableBase: 0.125rem solid $disable;
 
