@@ -11,10 +11,10 @@ import '../styles/about.scss';
 
 //Images
 import ProfilePic from "../assets/img/Profile pic.webp";
-import LinkedinLogo from "../assets/img/logos/Linkedin Logo.webp";
-import GithubLogo from "../assets/img/logos/Github Logo.webp";
-import FacebookLogo from "../assets/img/logos/Facebook Logo.webp";
-import InstagramLogo from "../assets/img/logos/Instagram Logo.webp";
+import LinkedinLogo from "../assets/img/logos/Linkedin logo.webp";
+import GithubLogo from "../assets/img/logos/Github logo.webp";
+import FacebookLogo from "../assets/img/logos/Facebook logo.webp";
+import InstagramLogo from "../assets/img/logos/Instagram logo.webp";
 import EmailPic from "../assets/img/utility/email.webp";
 import TelephonePic from "../assets/img/utility/call.webp";
 import ResumePic from "../assets/img/utility/resume.webp";
