@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FiMenu, FiX } from 'react-icons/fi';
+import { Helmet } from 'react-helmet-async';
 
 import logo from "../assets/img/Portfolio_logo.webp";
 
@@ -12,13 +12,26 @@ import logo from "../assets/img/Portfolio_logo.webp";
 //   { name: 'Contact', to: '/contact' },
 // ];
 
-export default function Header() {
+export default function Header({ preloadAssets = [] }) {
   // const [menuOpen, setMenuOpen] = useState(false);
 
   // const toggleMenu = () => setMenuOpen(!menuOpen);
   // const closeMenu = () => setMenuOpen(false);
 
   return (
+    <>
+    <Helmet>
+      {preloadAssets && 
+      preloadAssets.map((href, index) => (
+        <link
+          key={index}
+          rel="preload"
+          as="image"
+          href={href}
+          type="image/webp"
+        />
+      ))}
+    </Helmet>
     <header>
       <div>
         <Link to="/" aria-label="Home" className='header-logo-section'>
@@ -62,5 +75,6 @@ export default function Header() {
         ))}
       </nav> */}
     </header>
+    </>
   );
 }

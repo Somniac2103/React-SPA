@@ -1,0 +1,27 @@
+@use './design_system/designsystem' as *;
+
+.main{
+
+    width: 750px;
+    .introduction{    
+
+        .profilepic{
+            height: 150px;
+            width: auto;
+            border: $borderPrimaryBase;
+            border-radius: $borRadBase;
+            float: left;
+            margin: $spMedium;
+        }
+
+        p{
+            margin: $spMedium;
+        }
+
+        .socialstack{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
