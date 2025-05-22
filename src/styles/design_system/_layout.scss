@@ -29,7 +29,16 @@ header{
             border-radius: 50%;  
             height:p(75);      
         }        
-    }    
+    }  
+    
+    .header-logo-section h1 {
+//   font-size: 1.5rem;
+//   margin-left: 0.5rem;
+
+  @media (max-width: 500px) {
+    display: none;
+  }
+}
 }
 
 footer{

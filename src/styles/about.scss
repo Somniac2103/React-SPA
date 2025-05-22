@@ -1,27 +1,107 @@
 @use './design_system/designsystem' as *;
 
-.main{
-
-    width: 750px;
-    .introduction{    
-
-        .profilepic{
-            height: 150px;
-            width: auto;
-            border: $borderPrimaryBase;
-            border-radius: $borRadBase;
-            float: left;
-            margin: $spMedium;
-        }
-
-        p{
-            margin: $spMedium;
-        }
-
-        .socialstack{
-            display: flex;
-            justify-content: center;
-        }
-    }
+.main {
+  padding: $spMedium;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
+h2, h3, h4, h5 {
+  text-align: center;
+  margin: $spLarge auto $spSmall auto;
+  line-height: 1.2;
+}
+
+h2.stacked-title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+
+  span {
+    display: block;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 2.5rem;
+  }
+}
+
+/* INTRODUCTION SECTION */
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $spMedium;
+  text-align: center;
+
+  > div {
+    max-width: 800px;
+    text-align: justify;
+    padding: $spSmall;
+  }
+
+  .profilepic {
+    height: 160px;
+    width: auto;
+    border: $borderPrimaryBase;
+    border-radius: $borRadBase;
+    margin: $spSmall auto;
+    display: block;
+  }
+
+  .socialstack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $spSmall;
+    margin-top: $spMedium;
+  }
+}
+
+/* WORK SECTION */
+.work-section {
+  padding: $spMedium;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+
+  .icon {
+    font-size: 2rem;
+    margin: $spSmall 0;
+    text-align: center;
+  }
+
+  p {
+    margin: 0.25rem 0;
+  }
+}
+
+/* CV STACK */
+.cv-stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: $spSmall;
+  padding: $spMedium;
+}
+
+/* CONTACT SECTION */
+.contactMe-section {
+  padding: $spMedium;
+  text-align: center;
+
+  .contactStack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $spSmall;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+}
+
 

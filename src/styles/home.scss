@@ -1,111 +1,155 @@
 @use './design_system/designsystem' as *;
 
 .home {
-    width: 750px;
-    .hero-section{
-        .swiper{
-        width: 70vw;
-        min-height: 80vh;
-    }
+  width: 100%;
+  padding: $spSmall;
+
+  .hero-section {
+    overflow: hidden;
+    width: 100%;
+
+   .swiper {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 $spSmall;
+    box-sizing: border-box;
+  }
+
     .slide {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: $spMedium;
-        background-color: $primaryBG;
-        border-radius: 1rem;
-        box-shadow: $shadowBase;
-        border: $borderPrimaryBase; 
-        min-height: 70vh;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; // ensure stacking
+    text-align: center;
+    padding: $spMedium;
+    background-color: $primaryBG;
+    border-radius: 1rem;
+    box-shadow: $shadowBase;
+    border: $borderPrimaryBase;
+    min-height: 70vh;
+    box-sizing: border-box;
+
+          h2, ul {
+            width: 100%;
+            max-width: 800px;
+        }
     }
 
     h2 {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
     }
 
     ul {
-        padding-left: 1rem;
-        list-style: disc;
+      padding-left: 1rem;
+      list-style: disc;
     }
 
     li {
-        margin-bottom: 0.5rem;
+      margin-bottom: 0.5rem;
     }
 
     .swiper-button-prev,
     .swiper-button-next {
-        color: $primary;
-        padding: 8px;
-        width: 4rem;
-        height: 4rem;
+      color: $primary;
+      padding: 8px;
+      width: 4rem;
+      height: 4rem;
 
-        &::after {
-            font-size: 1rem;
-        }
+      &::after {
+        font-size: 1rem;
+      }
 
-        &:hover {
-            color: $secondary;
-        }
+      &:hover {
+        color: $secondary;
+      }
     }
 
     .swiper-pagination-bullet {
-        background: #ccc;
-        opacity: 1;
-        }
+      background: #ccc;
+      opacity: 1;
+    }
 
     .swiper-pagination-bullet-active {
-        background: $primaryDark;
+      background: $primaryDark;
+    }
+  }
+
+  .about-section {
+    .stacked-title {
+        text-align: center;
+        font-size: 2rem;
+        line-height: 1.1;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        margin: $spLarge auto;
+
+        span {
+            display: block;
+            transform: translateY(0);
+            transition: transform 0.3s ease;
+        }
+
+        @media (min-width: 768px) {
+            font-size: 2.5rem;
         }
     }
 
-    .about-section{
+    .introduction {
+      .profilepic {
+        height: 150px;
+        width: auto;
+        border: $borderPrimaryBase;
+        border-radius: $borRadBase;
+        float: none; // Remove float on mobile
+        margin: $spMedium auto;
+        display: block;
+      }
 
-        .introduction{
-            .profilepic{
-            height: 150px;
-            width: auto;
-            border: $borderPrimaryBase;
-            border-radius: $borRadBase;
-            float: left;
-            margin: $spMedium;
-        }
+      p {
+         margin: $spMedium auto;
+        max-width: 800px;
+        text-align: justify;
+      }
 
-        p{
-            margin: $spMedium;
-        }
-
-        .socialstack{
-            display: flex;
-        }
-
-        }  
-        
-        .work-section{
-            .work-section-terms{
-                .work-section-terms{
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-
-                    .work-section-part{
-                        width: 300px;
-            }
-        }
-
-            }
-        }
-
-        
-
-            
-
-        .contactMe-section{
-
-        }
-
+      .socialstack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $spSmall;
+        justify-content: center;
+      }
     }
 
+    .work-section {
+      .work-section-terms {
+        display: flex;
+        flex-direction: column;
+        gap: $spMedium;
 
-}
+        .work-section-part {
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+
     
 
+  }
+
+  // Desktop overrides
+  @media (min-width: 768px) {
+    .work-section-terms {
+      flex-direction: row;
+
+      .work-section-part {
+        width: 50%;
+      }
+    }
+
+    .introduction .profilepic {
+      float: left;
+      margin-right: $spMedium;
+    }
+  }
+}

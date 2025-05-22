@@ -65,7 +65,7 @@ const Home = () => {
       <PageMetaBox metadata={$pageMetaData}/>
         <main className='home'>
             <section className="hero-section" aria-label="Hero slideshow" >
-          <Swiper
+            <Swiper
               className='swiper'
               aria-roledescription="carousel"
               aria-label="Lastest updates, Currently working on and future plans"
@@ -140,7 +140,11 @@ const Home = () => {
           </Swiper>
             </section>   
             <section className='about-section' aria-label="About Me Section">
-              <h2>Work - Live - Play</h2>
+              <h2 className="stacked-title">
+                <span>Work</span>
+                <span>Live</span>
+                <span>Play</span>
+              </h2>
               <section className='introduction'>
                   <img src={ProfilePic} alt="Profile Pic of BK Salmon" className='profilepic'/>
                   <p>

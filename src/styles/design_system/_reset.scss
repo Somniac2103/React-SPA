@@ -9,10 +9,16 @@
 
 html, body {
   height: 100%;
+  width: 100%;               
+  overflow-x: hidden;   
   font-family: sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  position: relative;      
 }
 
 img, picture, video, canvas, svg {

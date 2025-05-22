@@ -1,14 +1,31 @@
 import { GoInfo } from "react-icons/go";
+import { useState } from "react";
+import "/src/styles/component_styles/PageMetaBox.scss";
 
 function PageMetaBox(props) {
-  return <div className="metabox">
-    <GoInfo className="metabox-info-icon"/>
-    <p className="metabox-label">Page Meta Data</p>
-    <h6>Page's Meta Data</h6>
-    <i>*If not stated, all of the items below are developered, engineered or administrated by myself</i>
-    <div className="metabox-content">
-      <ul>
-        <li>
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleBox = () => setIsOpen(!isOpen);
+  const closeBox = () => setIsOpen(false);
+
+  return <>
+      {/* Only show this on mobile via CSS */}
+      <button className="metabox-toggle-btn" onClick={toggleBox}>
+        <GoInfo />
+      </button>
+
+      <div className={`metabox ${isOpen ? "open" : ""}`} onClick={closeBox}>
+        <GoInfo className="metabox-info-icon" />
+        <p className="metabox-label">Page Meta Data</p>
+        <h6>Page's Meta Data</h6>
+        <i>
+          *If not stated, all of the items below are developered, engineered or
+          administrated by myself
+        </i>
+        <div className="metabox-content">
+          <ul>
+            {/* your list structure here */}
+            <li>
           <strong>---Design---</strong>
           <ul>
             <li><strong>UX/UI Design: </strong>{props.metadata.design}</li>      
@@ -56,9 +73,11 @@ function PageMetaBox(props) {
           </ul>
         </li>      
         
-      </ul>
-    </div>    
-    </div>
+            {/* repeat for other categories... */}
+          </ul>
+        </div>
+      </div>
+    </>
 }
 
 export default PageMetaBox
