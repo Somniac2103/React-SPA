@@ -1,0 +1,90 @@
+@use './../design_system/primitives' as *;
+
+.metabox {
+  position: fixed;
+  bottom: 0.5rem;
+  left: calc(-300px + 30px);
+  width: 300px;
+  border: $borderPrimaryBase;
+  border-radius: $borRadBase;
+  padding: $spHuge;
+  background-color: $primaryBG;
+  z-index: 900;
+  transition: left 0.4s ease-in-out;
+
+  &:hover {
+    left: 0;
+  }
+
+  &.open {
+    left: 0 !important;
+  }
+
+  i {
+    font-size: 0.75rem;
+  }
+
+  .metabox-label {
+    position: absolute;
+    top: 2.5rem;
+    right: 0;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: $scaleBase;
+    font-family: $font-heading;
+    color: $primary;
+    letter-spacing: 0.1em;
+  }
+
+  .metabox-info-icon {
+    position: absolute;
+    top: 0.5rem;
+    right: 0;
+    font-size: 1.5rem;
+    color: $primary;
+  }
+
+  .metabox-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    li {
+      font-size: 0.75rem;
+      padding: 0.125rem;
+    }
+  }
+}
+
+// Hide hover behavior on mobile
+@media (max-width: 768px) {
+  .metabox {
+    left: -300px;
+    &:hover {
+      left: -300px
+    }
+  }
+
+  .metabox-toggle-btn {
+    position: fixed;
+    bottom: 6rem;
+    left: 0;
+    background-color: $primary;
+    color: white;
+    border: none;
+    border-radius: 0 $borRadBase $borRadBase 0;
+    padding: 0.75rem;
+    z-index: 901;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
+
+// Hide toggle button on desktop
+@media (min-width: 769px) {
+  .metabox-toggle-btn {
+    display: none;
+  }
+}

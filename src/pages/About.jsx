@@ -77,7 +77,7 @@ const About = () => {
 
           </div>
            
-                <strong>If you want to see more check out my social accounts:</strong>
+                <p><strong>If you want to see more check out my social accounts:</strong></p>
                 <div className='socialstack'>
                    <ExternalLinkIconCard
                       target={{
