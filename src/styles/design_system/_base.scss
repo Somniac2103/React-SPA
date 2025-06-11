@@ -13,7 +13,7 @@ a {
     }
   
     &:active {
-      color: $teriary;
+      color: $tertiary;
       text-decoration: none;
     }
   }
@@ -45,7 +45,7 @@ a {
       border: $borderTertiaryBase;
       box-shadow: p(4) p(4) p(4) $shadowLow;
       background-color: $tertiaryBG;
-      color: $teriary;
+      color: $tertiary;
       cursor: pointer;
     }
   

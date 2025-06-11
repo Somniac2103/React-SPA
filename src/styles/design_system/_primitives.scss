@@ -4,7 +4,7 @@
 /* Font */
 $primaryFont: 'Georgia';
 $secondaryFont: 'Roboto';
-$teriaryFont: 'Montserrat';
+$tertiaryFont: 'Montserrat';
 
 $font-body: $secondaryFont, sans-serif;
 $font-heading: $primaryFont, serif;
@@ -18,45 +18,49 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Colours */
-  /* Theme colors */
-  $primary: #0157AE; 
-  $primaryBG: #E6F2FF;
-  $primaryDark: #1565C0;
-  /* Attention */
-  $secondary: #20C997;
-  $secondaryBG: #D9F7EE;
-  $secondaryDark: #137A6D;
-  /* highlighting */
-  $teriary: #FFF59D;
-  $tertiaryBG: #FFFDE7;
-  $tertiaryDark: #F9C846;
+ /* === Theme Colors === */
+$primary:        #3D4A85;   // Deep Slate Indigo – professional & trustworthy
+$primaryBG:      #EEF0FA;   // Soft blue-gray – light mode background
+$primaryDark:    #2A2F54;   // Stronger indigo for dark accents or hover
 
-  /* Functional Colors */
-  /* Black, softWhite and White */
-  $black: #000;
-  $softWhite: hsl(0, 0%, 95%);
-  $white:#fff;
+$secondary:      #5AB8B2;   // Muted Teal – calm and modern
+$secondaryBG:    #E3F6F4;   // Cool light teal – highlight zones
+$secondaryDark:  #2E7C76;   // Saturated teal for contrast on dark BGs
 
-  /* alert */
-  $alert: #DC3545;
-  $alertBG: #F8D7DA;
-  $alertDark: #B71C1C;
-  /* warning */
-  $warning: #FFC107;
-  $warningBG: #FFF8E1;
-  $warningDark: #FF8F00;
-  /* success */
-  $success: #28A745;
-  $successBG: #D4EDDA;
-  $successDark: #155724;
-  /* information */
-  $info: #17A2B8;
-  $infoBG: #D1ECF1;
-  $infoDark: #0C5460;
-  /* Disabled */
-  $disable: #646363;
-  $disableBG: #e2e2e2;
-  $disableDark: #5a5a5a;
+$tertiary:       #F5C97A;   // Warm soft gold – gentle attention
+$tertiaryBG:     #FFF9E5;   // Subtle pale gold background
+$tertiaryDark:   #D9A63B;   // Bold goldenrod for buttons/alerts
+
+/* === Functional Colors (Refined) === */
+$alert:          #D66A6A;   // Calm red (not aggressive)
+$alertBG:        #FAE4E4;
+$alertDark:      #912323;
+
+$warning:        #E2B13C;   // Warm but clear yellow
+$warningBG:      #FFF7E1;
+$warningDark:    #9A6F00;
+
+$success:        #50B37D;   // Clean professional green
+$successBG:      #DDF5E8;
+$successDark:    #277148;
+
+$info:           #3A9DBE;   // Calm info blue
+$infoBG:         #E1F2F8;
+$infoDark:       #18627C;
+
+/* === Neutrals & Utility === */
+$black:          #000000;
+$white:          #FFFFFF;
+$softWhite:      #F5F5F5;
+
+$disable:        #9CA3AF;   // Medium gray
+$disableBG:      #E5E7EB;   // Light gray
+$disableDark:    #6B7280;   // Muted dark gray
+
+$text-dark:      #1A1C1F;
+$text-light:     #F9FAFB;
+
+
 
   /* Decorative Colors */
   $shadowBase: rgba(0, 0, 0, 0.5);
@@ -88,6 +92,6 @@ h1, h2, h3, h4, h5, h6 {
 
  $borderPrimaryBase: 0.125rem solid $primary;
  $borderSecondaryBase: 0.125rem solid $secondary;
- $borderTertiaryBase: 0.125rem solid $teriary;
+ $borderTertiaryBase: 0.125rem solid $tertiary;
  $borderDisableBase: 0.125rem solid $disable;
 
